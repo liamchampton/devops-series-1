@@ -1,2 +1,1 @@
-# Dockerfile build config
-FROM image-here
+FROM image-name
