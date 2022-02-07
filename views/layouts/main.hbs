@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <style>
+    body,
+    h1 {
+      font-family: "Raleway", sans-serif
+    }
+
+    body,
+    html {
+      height: 100%
+    }
+
+    .india-img {
+      background: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)), url('https://i.imgur.com/SluWKsC.jpg');
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+
+    }
+
+    .dubai-img {
+      background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3506&q=80');
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .usa-img {
+      background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3506&q=80');
+      min-height: 100%;
+      background-position: center;
+      background-size: cover;
+    }
+    
+    body {
+      background-color: #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    header, footer {
+      width: 100%;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #000;
+      display: block;
+      padding: 1em 0;
+      text-align: center;
+      width: 100%;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 1em;
+      text-decoration: none;
+    }
+
+    .scrolling-box {
+      background-color: #eaeaea;
+      display: block;
+      height: 100%;
+      overflow-y: scroll;
+      scroll-behavior: smooth;
+      text-align: center;
+      width: 100%;
+    }
+
+    section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  {{> 'partials/header' }}
+  {{embed}}
+  {{> 'partials/footer' }}
+
+</body>
+
+</html>
