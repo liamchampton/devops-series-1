@@ -13,4 +13,7 @@ jobs:
       TAG: v1
       SERVER: devopsonazure.azurecr.io
       IMAGE: doa-ep1
-    secrets: inherit
+    secrets:
+      ACR_USERNAME: ${{ secrets.ACR_USERNAME }}
+      ACR_PASSWORD: ${{ secrets.ACR_PASSWORD }}
+   #secrets: inherit is an option to pass secrets to the reusable workflow.
