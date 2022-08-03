@@ -1,0 +1,19 @@
+name: Reusable Workflow - Go/Docker/ACR
+
+on:
+  push: 
+    branches: [main]
+
+  workflow_dispatch:
+
+jobs:
+  call-workflow-passing-data:
+    uses: chrisreddington/reusable-workflows/.github/workflows/reusable-go-workflow.yml@main
+    with:
+      TAG: v1-reusable
+      SERVER: devopsonazure.azurecr.io
+      IMAGE: doa-ep1
+    secrets:
+      ACR_USERNAME: ${{ secrets.ACR_USERNAME }}
+      ACR_PASSWORD: ${{ secrets.ACR_PASSWORD }}
+   #secrets: inherit is an option to pass secrets to the reusable workflow.
