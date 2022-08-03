@@ -1,0 +1,16 @@
+name: Reusable Workflow - Go/Docker/ACR
+
+on:
+  push: 
+    branches: [main]
+
+  workflow_dispatch:
+
+jobs:
+  call-workflow-passing-data:
+    uses: chrisreddington/reusable-workflows/.github/workflows/reusable-go-workflow.yml@main
+    with:
+      TAG: v1
+      SERVER: devopsonazure.azurecr.io
+      IMAGE: doa-ep1
+    secrets: inherit
